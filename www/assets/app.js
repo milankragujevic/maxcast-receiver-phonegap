@@ -1,16 +1,6 @@
-if(window.navigator.userAgent.match(/Firefox/g)) {
-    $(function() {
-        onDeviceReady('isNotCordova_');
-    });
-}
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady(isNotCordova_ = false) {
 	var orchestrator = 'milankragujevic.com:3000';
-    if(isNotCordova_ == 'isNotCordova_') {
-        var isNotCordova = true;
-    } else {
-        var isNotCordova = false;
-    }
     $('body').css({
 	    width: $(window).width(),
 	    height: $(window).height()
@@ -18,7 +8,6 @@ function onDeviceReady(isNotCordova_ = false) {
     var wallpaper = 1;
     var wallpapers = 10;
     setWallpaper();
-    if(!device) { var device = {}; device.uuid = null; }
     var android_id = device.uuid;
     if(!android_id) {
 	    android_id = '0123456789';
