@@ -13,6 +13,7 @@
     <plugin name="cordova-plugin-media" />
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-disable-http-cache" />
     <icon src="icon.png" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
